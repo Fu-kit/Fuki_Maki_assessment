@@ -1,1 +1,366 @@
+(Perplexity)
 
+こちらがご依頼の英文訳です：
+
+---
+
+**I will take the test under the following conditions. Please explain the procedure and what to keep in mind at each stage, within 1000 Japanese characters.**
+
+**Test Requirements:**
+
+* **Course:** Introduction to Programming with Python
+* **Duration:** 2 hours
+* **Mode:** Open Book, AI-Assisted (encouraged)
+* **Environment:** Google Colab, GitHub (for submission)
+
+---
+
+**Assessment Overview**
+This assessment evaluates your understanding of core programming concepts and your ability to apply them in practical scenarios while leveraging AI as a powerful learning tool. You are encouraged to use AI (e.g., ChatGPT, Gemini, Copilot), but AI should enhance your learning, not replace it.
+
+---
+
+**Core Requirements**
+For each question, you must:
+
+* **Explain WHY** you made specific choices: justify your approach and decisions
+* **Explain HOW** the course material guided your decisions: connect your answers to course content and methodology
+* **Practice intentional prompting:** interact with AI through meaningful conversations rather than one-shot prompts
+
+---
+
+**AI Conversation Documentation**
+Include your full AI conversations in your repository:
+
+* Save chat logs, screenshots, or copy/paste dialogues into markdown files
+* Include back-and-forth dialogues, including follow-up questions and refinements
+* Show how your prompting evolved as your understanding grew
+
+---
+
+**Submission Requirements**
+GitHub Repository Structure:
+
+```
+/lastname_firstname_assessment
+├── problem1_temperature.ipynb
+├── problem2_quiz.ipynb
+├── short_answers.md (or include in notebooks)
+├── ai_conversations/
+│   ├── temperature_development.md
+│   ├── quiz_design.md
+│   ├── debugging_help.md
+│   └── [other conversation logs]
+├── reflection.md
+└── README.md
+```
+
+**Submission Checklist:**
+
+* All code runs without errors in Google Colab
+* Complete AI conversation logs included
+* All methodology steps completed for coding problems
+* Reflection section completed
+* Repository zipped and submitted
+* README.md explains your approach and AI usage strategy
+
+---
+
+
+(DeepSeek)
+Here is the English translation of your Japanese text:
+
+---
+
+**Test Strategy and Key Points to Keep in Mind**
+
+### 1. Preparation (10 minutes)
+
+**Environment Setup**
+Ensure Google Colab and GitHub are connected properly. Initialize your repository and create the folder `lastname_firstname_assessment`, following the specified directory structure.
+
+**AI Tool Setup**
+Check that tools like ChatGPT and Copilot are available. Practice how to save conversation logs (e.g., by pasting them into markdown files).
+
+**Points to Keep in Mind**
+
+* Strictly follow the required repository structure and submission requirements.
+* Reconfirm the AI usage policy, making sure AI is treated as a *supporting tool*, not a replacement.
+
+---
+
+### 2. Section 1: Short Answer Questions (20 minutes)
+
+**Question 1: How to Use AI (7 minutes)**
+
+**Example Use Cases**
+
+* *Understanding phase*: Ask AI, “List the requirements for a Python temperature conversion program,” to clarify inputs/outputs.
+* *Identifying I/O*: Ask, “What error handling is missing from this specification?”
+
+**Benefits & Pitfalls**
+AI can help identify issues early, but you must double-check the requirements yourself to avoid overreliance.
+
+---
+
+**Question 2: Debugging (8 minutes)**
+
+**Error Identification**
+Points out `ZeroDivisionError` when processing an empty list.
+
+**Example AI Prompt**
+“This code throws an error with an empty list. How should I fix it? Please explain the reasoning and suggest edge cases.”
+
+**Fixing Approach**
+Add a conditional check: `if len(numbers) == 0:`.
+
+---
+
+**Question 3: Data Structures (5 minutes)**
+
+* **Scenario A**: Use a dictionary (`{'name': grade}`) for efficient access.
+* **Scenario B**: Use sets (`set()`) to track submitted students and avoid duplicates.
+
+**Points to Keep in Mind**
+
+* Clearly explain your reasoning and refer to concepts learned in class (e.g., O(1) access with dictionaries).
+* Don’t blindly adopt AI suggestions—justify your own choices.
+
+---
+
+### 3. Section 2: Implementation Problems (35 minutes)
+
+**Problem 1: Temperature Conversion (20 minutes)**
+
+**Understand & Plan (3 minutes)**
+Define inputs (temperature, unit) and outputs (converted result). Ask AI how to validate user input.
+
+**Pseudocode (5 minutes)**
+
+```python
+if not input.isdigit():
+    print("Invalid input")
+elif unit not in ['C', 'F']:
+    ...
+```
+
+**Implementation (12 minutes)**
+Use `try-except` for numeric input. Simplify regular expressions proposed by AI for better readability.
+
+---
+
+**Problem 2: Quiz System (15 minutes)**
+
+**Data Structure**
+Use a list of dictionaries:
+
+```python
+[{'question': ..., 'options': [...], 'answer': 'A'}]
+```
+
+**AI Usage**
+Ask: “What’s an efficient way to implement the scoring logic for a multiple-choice quiz?” Improve the loop based on AI suggestions.
+
+**Points to Keep in Mind**
+
+* Document conversations with AI and explain why you chose specific code structures (e.g., “I used `if-else` instead of `match-case` due to readability”).
+* Include test cases for edge inputs like blank answers or boundary values.
+
+---
+
+### 4. Section 3: Reflection (5 minutes)
+
+**Evaluating AI Interaction**
+“In `temperature_development.md`, AI’s suggestion to layer exception handling was helpful. However, I avoided overgeneralization and focused on assessment-specific logic.”
+
+**Revision Example**
+“In `quiz_design.md`, I removed the randomization feature AI suggested because it was outside the scope of the requirements.”
+
+**Key Reminder**
+Keep reflections concise and reference specific files.
+
+---
+
+### 5. Final Checks (10 minutes)
+
+**Checklist**
+
+* All code runs correctly in Colab.
+* AI logs include evidence of iterative learning (e.g., prompt revisions).
+* Reflections clearly express what was learned.
+
+**Final Review**
+Add a strategy summary to `README.md`, such as:
+“I used AI for brainstorming, but prioritized course best practices during implementation.”
+
+---
+
+### Summary
+
+* **Time Allocation**: Planning (20%) → Implementation (50%) → Testing & Reflection (30%)
+* **AI Usage**: Always be ready to explain why you accepted or rejected a suggestion.
+* **Documentation**: Make your thought process visible to meet the “AI Integration & Methodology” assessment criteria.
+
+---
+
+Let me know if you'd like this translated into a `.md` file or broken down into checklists for easier tracking.
+
+
+(Claude)
+Here is the full English translation of your latest Japanese text:
+
+---
+
+**Test Participation Based on the Following Requirements**
+Please describe the procedure and key points to keep in mind at each stage of the test in 1000 Japanese characters or less. The requirements are as follows:
+
+* **Course:** Introduction to Programming with Python
+* **Duration:** 2 hours
+* **Mode:** Open Book, AI-Assisted (encouraged)
+* **Environment:** Google Colab, GitHub (for submission)
+
+---
+
+**Assessment Overview**
+This assessment evaluates your understanding of core programming concepts and your ability to apply them in practical scenarios while leveraging AI as a powerful learning tool. You are encouraged to use AI (e.g., ChatGPT, Gemini, Copilot) to assist you, but remember that AI should enhance your knowledge—not replace it.
+
+---
+
+**Key Requirements**
+For each question, you must:
+
+* Explain **WHY** you make specific choices: Justify your approach and decisions.
+* Explain **HOW** course materials guided your decisions: Connect your answers to course concepts and methodology.
+* Practice **intentional prompting**: Use AI in a conversational, iterative manner—avoid one-shot prompts.
+
+---
+
+**AI Conversation Documentation**
+Include your complete AI conversations in your GitHub repository:
+
+* Save chat logs, screenshots, or copy/paste conversations into markdown files.
+* Document full dialogue, including follow-up questions and refinements.
+* Show how your prompting evolved as you learned.
+
+---
+
+**GitHub Repository Structure:**
+
+```
+/lastname_firstname_assessment
+├── problem1_temperature.ipynb
+├── problem2_quiz.ipynb
+├── short_answers.md (or include in notebooks)
+├── ai_conversations/
+│   ├── temperature_development.md
+│   ├── quiz_design.md
+│   ├── debugging_help.md
+│   └── [other conversation logs]
+├── reflection.md
+└── README.md
+```
+
+---
+
+**Submission Checklist:**
+
+* All code runs without errors in Google Colab
+* AI conversation logs are complete and included
+* All methodology steps followed for coding problems
+* Reflection section completed
+* Repository zipped and submitted
+* README.md explains overall approach and AI usage strategy
+
+---
+
+**Test Composition Summary**
+
+This task involves instructions and evaluation methods for a Python programming test. It is a two-hour open-book format with AI usage (e.g., ChatGPT, Gemini, Copilot) encouraged. I need to provide students with effective test-taking procedures and key points to be mindful of.
+
+---
+
+### Test Sections:
+
+* **Section 1:** Short-answer and conceptual understanding (20 minutes)
+* **Section 2:** AI-assisted problem-solving and implementation (35 minutes)
+* **Section 3:** Reflection (5 minutes)
+
+---
+
+### Special Emphasis:
+
+* Document AI conversations and show your learning process
+* Follow the six-step programming methodology
+* Explain not only *what* you did, but *why* you chose that approach
+* Use AI as a tool to **enhance** learning—not just to get the right answer
+
+---
+
+## Test-Taking Strategy and Key Considerations
+
+### 1. Pre-Test Setup
+
+* Prepare your Google Colab and GitHub accounts
+* Ensure your programming environment is functional
+* Review the six-step problem-solving framework (Understand → Identify I/O → Manual Work → Pseudocode → Implement → Test)
+
+### 2. Time Allocation
+
+* Section 1: Short answer & conceptual understanding (20 min)
+* Section 2: Problem-solving & implementation (35 min):
+
+  * Temperature converter (20 min)
+  * Quiz system (15 min)
+* Section 3: Reflection (5 min)
+* Remaining time: Prepare for submission (GitHub cleanup, etc.)
+
+### 3. Effective AI Interaction (Throughout)
+
+* Don’t just request answers—use AI conversationally
+* Ask: “How should I approach this problem?” not “Write code for me.”
+* Follow up with questions to deepen understanding
+* Record the entire conversation (screenshots or copied text)
+* Critically evaluate AI suggestions
+* Ask “What if...” questions to explore edge cases and exceptions
+
+### 4. Key Points in Each Step
+
+#### Understand & Plan
+
+* Rephrase the problem in your own words and check with AI
+* Define input/output clearly and validate with AI
+* Think about edge cases and discuss them with AI
+
+#### Implementation
+
+* Build code in stages—not all at once
+* Ask AI, “Why did you suggest this?”
+* Connect AI proposals with course concepts
+* Read, understand, and modify AI comments
+
+#### Testing
+
+* Test not only standard cases but also edge cases (e.g., empty lists, negative values)
+* Ask AI why an error occurred
+* Document your debugging process
+
+### 5. Submission Preparation
+
+* Follow the required directory structure
+* Properly organize and label AI logs
+* In README, explain your approach and AI usage strategy
+* Make sure all code runs without errors
+
+---
+
+### Key Takeaways
+
+* AI is your *learning partner*, not your answer machine
+* Always explain **why** and **how**
+* Show your problem-solving process clearly
+* Always link your work to course concepts
+* Demonstrate the evolution of your thinking and prompt refinement
+
+---
+
+This test is not just about getting the right answers—it's about demonstrating your problem-solving process and critical thinking. Focus on deepening your understanding through dialogue with AI and clearly expressing what you’ve learned.
