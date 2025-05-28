@@ -8,3 +8,55 @@ Q)Explain why using AI in these early stages is beneficial, and what potential p
 
 A)Even if I ask AI from the early stages, I don’t know what the problem is or what kind of questions I should ask. This is what I consider a potential pitfall.
 As a countermeasure to this problem, I ask the AI, 'Please help me understand the problem' and 'Please provide appropriate example questions.
+
+
+Question 2: Debugging with AI
+
+Q)Identify the error(s) in this code and explain what will happen when it runs.
+A)The main error is handling empty lists. When processing the second test case [] (empty list), len(numbers) becomes 0, which leads to a division by zero error (ZeroDivisionError) when calculating total / len(numbers).
+
+Q)Write a specific prompt you would give an AI tool to help debug this code. The prompt should guide the AI to help you learn, not just fix the problem.
+A)
+
+Please identify the error clearly and explain what each part of the code does.
+
+An AI suggested the following code. I think it handles the error we found (i.e., the case of an empty list) well. What do you think?
+
+Based on what we’ve found so far, could you provide a complete, ready-to-use version of the code?
+
+Is there a simpler version of your code that keeps its strengths?
+
+Q)Fix the code and explain your solution approach.
+A)Add a conditional statement to check whether the list is empty.
+
+python
+Copy
+Edit
+from typing import List, Optional
+
+def calculate_average(numbers: List[float]) -> Optional[float]:
+    """Calculates the average of a list of numbers. Returns None if the list is empty."""
+    if not numbers:
+        return None
+    return sum(numbers) / len(numbers)
+
+# Test cases
+if __name__ == "__main__":
+    test_cases = [
+        ([1, 2, 3], 2.0),
+        ([], None),
+        ([-1, 0, 1], 0.0),
+        ([10.5, 20.5], 15.5),
+    ]
+    
+    for numbers, expected in test_cases:
+        result = calculate_average(numbers)
+        assert result == expected, f"{numbers}: expected {expected}, got {result}"
+        print(f"✓ {numbers} → {result}")
+
+
+
+
+
+
+
